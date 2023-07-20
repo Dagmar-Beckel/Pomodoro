@@ -26,7 +26,7 @@ struct CountPickerView: View {
                                     .font(Font.title.weight(.bold))
                            })
                         .frame(width: 32, height: 32).foregroundColor(Color.white)
-                        .background(Color(hex: "ffffff", alpha: 0.5)).cornerRadius(25)
+                        .background(Color(hex: "111111", alpha: 0.2)).cornerRadius(25)
                 }.padding(.top, 10)
                 HStack(alignment: .center, spacing: 16) {
                     GenPickerView(label: "Hours", values: 24, index: $hoursIndex)

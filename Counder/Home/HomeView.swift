@@ -23,11 +23,8 @@ struct HomeView: View {
                 BubbleView(size: 200, x: appWidth/2 - 40, y: 120 - appHeight/2)
                 BubbleView(size: 100, x: appWidth/2 - 40, y: 10 - appHeight/2)
                 VStack {
-                    HStack {
-                        Text("COUNDER").modifier(MontserratFont(.extra_bold, size: 32))
-                            .foregroundColor(Color.text_primary_color)
-                        Spacer()
-                    }.padding(.top, 16).padding(.leading, 23)
+                    Text("Timer").modifier(MontserratFont(.extra_bold, size: 32))
+                        .foregroundColor(Color.text_primary_color)
                     Spacer()
                 }
                 Button(action: { viewModel.displayPickerSheet() }, label: { TimerView(progress: $viewModel.progress, duration: $viewModel.duration) })
